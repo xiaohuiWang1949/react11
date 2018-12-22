@@ -1,0 +1,303 @@
+
+
+
+/*头部*/
+
+#header{
+	width: 100%;
+	height: 1.04rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9;
+	background: white;
+}
+
+#header>.logo>img{
+	width: 1.8rem;
+	height: .75rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#header>.menu{
+	width: 1.04rem;
+	height: 1rem;
+	color: tomato;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#header>.menu>i{
+	width: .7rem;
+	height: .7rem;
+}
+
+#header>.right{
+	display: flex;
+}
+
+#header>.right>a{
+	width: 1.04rem;
+	height: 1rem;
+	color: tomato;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#header>.right>a>i{
+	width: .7rem;
+	height: .7rem;
+}
+
+.content{
+	padding-top: 1rem;
+}
+
+.con{
+	padding-top: 1rem;
+}
+
+/*侧边菜单栏*/
+
+#menubox{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	display: none;
+	transition: all .7s;
+	z-index: 999;
+}
+
+#menubox.show{
+	opacity: 1;
+	display: block;
+	transition: all .7s;
+}
+
+#menubox.show>.menu{
+	transform: translateX(100%);
+	
+}
+
+#menubox>.menu{
+	width: 50%;
+	height: 100%;
+	background: #fff;
+	position: fixed;
+	left: -50%;
+	top: 0;
+	z-index: 9;
+	transition: all .7s;
+}
+
+#menubox>.menu>h2{
+	width: 100%;
+	padding: 0.3rem;
+	display: flex;
+	align-items: center;
+	font-weight: normal;
+	color: tomato;
+}
+
+#menubox>.menu>h2 img{
+	width: 0.84rem;
+	height: 0.84rem;
+	margin-right: 0.1rem;	
+}
+
+#menubox>.menu>ul{
+
+}
+
+#menubox>.menu>ul>li{
+	width: 100%;
+	height: 0.99rem;
+	border-bottom: .01rem solid #f0f0f0;
+	display: flex;
+}
+
+#menubox>.menu>ul>li>a{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 30%;
+	color: #cfcfcf;
+}
+#menubox>.menu>ul>li>.active{
+	color: #fb3f3d;
+}
+
+#menubox>.menu>ul>li>a>i{
+	margin-right: 0.1rem;
+	width: 0.5rem;
+}
+
+#menubox>.mark{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+
+/*轮播图*/
+.banner_per{
+	width: 100%;
+	height: 3.75rem;
+}
+
+.banner_per>.swiper-wrapper>.img>img{
+	width: 100%;
+	height: 100%;
+}
+
+
+/*消息*/
+.swiper-container_message{
+	width: 100%;
+	height: .90rem;
+	background: #f7f7f7;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+
+.swiper-container_message>.message{
+	width: 1rem;
+	height: 70%;
+	border-right: .01rem solid #999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.swiper-container_message>.swiper-wrapper{
+	width: 100%;
+	height: 100%;
+	padding: 0 .3rem;
+}
+
+.swiper-container_message>.swiper-wrapper>.swiper-slide{
+	width: 100%;
+	height: 100%;
+	line-height: .92rem;
+	color: #999;
+	overflow: hidden;
+}
+
+.swiper-container_message>.swiper-wrapper>.swiper-slide>.play_name{
+	color: #666;
+	margin-right: .3rem;
+}
+
+.swiper-container_message>.swiper-wrapper>.swiper-slide>.username{
+	margin-right: .1rem;
+}
+
+
+/*homelist*/
+
+.homeList{
+	width: 100%;
+	height: 100%;
+}
+.homeList>li{
+	width: 100%;
+	height: 4.62rem;
+	padding: .24rem;
+	border-bottom: .01rem solid #a0a0a0;
+}
+
+.homeList>li h4{
+	width: 97%;
+	font-size: .3rem;
+	height: .4rem;
+	margin-bottom: .24rem;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.homeList>li .img{
+	width: 100%;
+	height: 3.5rem;
+	position: relative;
+}
+
+.homeList>li .img img{
+	width: 100%;
+	height: 100%;
+}
+
+.homeList>li .img .p{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: .76rem;
+	padding: .2rem .2rem .26rem .2rem;
+	color: #ccc;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.homeList>li .img .p .right{
+	display: flex;
+}
+
+.homeList>li .img .p .right span{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: .2rem;
+}
+
+.homeList>li .img .p .right .like{
+	width: .46rem;
+	height: .52rem;
+}
+
+.homeList>li .img .p .right .comments{
+	width: .46rem;
+	height: .52rem;
+	margin-left: .2em;
+}
+
+/*homelist滚动*/
+
+#root{
+	height: 100%;
+}
+
+#root>div{
+	height: 100%;
+}
+
+#root .box{
+	height: 100%;
+}
+
+.wrapper{
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+
+
+

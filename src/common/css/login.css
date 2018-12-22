@@ -1,0 +1,97 @@
+
+.user{
+    width: 100%;
+    height: 100%;
+    padding: 0 .3rem;
+}
+
+.user .method{
+    width: 100%;
+}
+
+.user .method p{
+    width: 100%;
+    padding: .2rem;
+    display: flex;
+    justify-content: center;
+    color: #a0a0a0;
+}
+
+.user .method .imgs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user .method .imgs div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.user .method .imgs div img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.user .go{
+    weight: 100%;
+}
+
+.user .go p {
+    width: 100%;
+    height: 0.72rem;
+    margin-top: 0.24rem;
+    position: relative;
+}
+
+.user .go p .icon{
+    position: absolute;
+    top: 50%;
+    left: 0.1rem;
+    margin-top: -0.2rem;
+    width: 0.32rem;
+    height: 0.32rem;
+    color: #ccc;
+    padding-left: 0.1rem;
+    z-index: 1;
+}
+
+.user .go p input{
+    position: absolute;
+    top: 50%;
+    left: 0.1rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 0.7rem;
+    background: #e6eaee;
+    border: 0;
+    border-radius: .2rem;
+    font-size: 30px;
+}
+
+.user .btn button{
+    width: 100%;
+    height: 0.92rem;
+    border: 0;
+    border-radius: .7rem;
+    margin: 0.4rem 0;
+    background: #fe584d;
+    line-height: 0.92rem;
+    text-align: center;
+    color: white;
+    font-size: 0.4rem;
+}
+
+.user .register{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user .register span a{
+    color: #65abd0;
+}
