@@ -77,3 +77,20 @@ export const TYPOUT_LIST=(page)=>({
 		})		
 	})
 })
+
+export const serch_action = ()=>({
+	type:"SERCH_LIST",
+	payload:new Promise(resolve=>{
+		let url = "/api/search/index?keyword="
+		fetch(url)
+		.then(res=>res.json())
+		.then((data)=>{
+//			 console.log(data)
+			/*data.result.event.map((item)=>{
+                item.src = common.getPic(item.fileid);
+            })*/
+            resolve(data.result.event)
+		})
+	})
+})
+	
